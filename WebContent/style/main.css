@@ -1,0 +1,421 @@
+/**********************************************************
+general
+**********************************************************/
+
+body {
+	background: #f5f7f8;
+	font: 14px 'Open Sans';
+	color: #4b4b4b;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #1773cf;
+}
+
+p {
+	margin: 0;
+}
+
+#content-container {
+	width: 560px;
+	margin: 100px auto;
+}
+
+#welcome-container {
+	margin-bottom: 45px;
+}
+
+#welcome-container h1 {
+	margin: 0 0 10px;
+	font-size: 32px;
+	font-weight: normal;
+}
+
+#empty-indicator {
+	text-align: left;
+}
+
+#notice-container {
+	display: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.section-container {
+	margin-bottom: 40px;
+}
+
+.section-header {
+	height: 40px;
+	margin: 0;
+	padding: 0 20px;
+	border-radius: 5px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: normal;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #f5f7f8;
+}
+
+.section-contents {
+	margin-top: 15px;
+}
+
+.text-form {
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.input-box {
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	width: 100%;
+	margin: 5px 0;
+	padding: 5px 10px;
+	font: 14px 'Open Sans';
+}
+
+.input-button {
+	width: auto;
+	margin: 0;
+	font-size: 12px;
+}
+
+.error-message {
+	margin-bottom: 10px;
+	font-size: 11px;
+	color: #f00;
+}
+
+.error-message:last-child {
+	margin-bottom: 0;
+}
+
+.error-message + #submit {
+	margin-top: 5px;
+}
+
+/**********************************************************
+welcome
+**********************************************************/
+
+#welcome-page-container {
+	margin: 100px auto;
+}
+
+#account-option-container {
+	display: inline-block;
+	width: 771px;
+	margin-bottom: 40px;
+}
+
+.account-option {
+	float: left;
+	width: 360px;
+	padding: 20px 0;
+}
+
+.account-option:first-child {
+	margin-right: 25px;
+	padding-right: 25px;
+	border-right: 1px solid #c2c2c2;
+}
+
+.account-option p {
+	margin: 0 0 30px;
+}
+
+.account-button {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 164px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #4b4b4b;
+	color: #f5f7f8;
+}
+
+.account-button::first-line {
+	font-size: 12px;
+}
+
+#login-button-container p {
+	margin: 0 0 15px;
+}
+
+#login-button {
+	width: auto;
+	background: #fff;
+	color: #4b4b4b;
+}
+
+#login-button::first-line {
+	font-size: inherit;
+}
+
+/**********************************************************
+login / register
+**********************************************************/
+
+#login-container, #reg-container {
+	box-sizing: border-box;
+	width: 260px;
+	margin: 100px auto;
+}
+
+#login-form a, #reg-form a {
+	font-size: 12px;
+}
+
+#login-form .input-button, #reg-form .input-button {
+	margin-right: 5px;
+}
+
+#reg-form .input-button {
+	margin-bottom: 10px;
+}
+
+/**********************************************************
+navigation
+**********************************************************/
+
+#navigation-container {
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	text-align: left;
+}
+
+#user-icon {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+#user-information {
+	display: block;
+	float: left;
+	vertical-align: top;
+	margin-top: 5px;
+}
+
+#user-information p {
+	display: inline-block;
+	margin: 0;
+}
+
+#level-message, #logout-link {
+	font-size: 11px;
+}
+
+#navigation-pages-container {
+	position: fixed;
+	top: 90px;
+	left: 0;
+}
+
+#navigation-pages-container ul {
+	margin: 0;
+	padding: 0;
+}
+
+#navigation-pages-container ul li {
+	width: 200px;
+	height: 30px;
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+#navigation-pages-container ul li a {
+/*	transition: 2s; */
+	display: block;
+	padding: 0 15px;
+	background: #fff;
+	border-left: 0px solid #4b4b4b;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: 13px;
+	line-height: 30px;
+	color: #4b4b4b;
+}
+
+#navigation-pages-container ul li a:hover {
+/*	transition: .25s; */
+	background: #4b4b4b;
+	color: #f5f7f8;
+}
+
+/**********************************************************
+profile
+**********************************************************/
+
+#profile-picture {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto 10px;
+	border-radius: 5px;
+}
+
+/**********************************************************
+training
+**********************************************************/
+
+#level-select-container {
+	margin: 45px auto 0;
+	width: 560px;
+}
+
+#level-select-container ul {
+	margin: 0;
+	padding: 0;
+}
+
+#level-select-container ul li {
+	margin-bottom: 10px;
+	list-style: none;
+	text-align: left;
+}
+
+#level-select-container ul li a {
+	display: block;
+	background: #4b4b4b;
+}
+
+/**********************************************************
+enterprise
+**********************************************************/
+
+#enterprise-form {
+	text-align: left;
+}
+
+#enterprise-form #amount {
+	width: 50px;
+	margin: 0 5px;
+	border: none;
+}
+
+#enterprise-form #submit {
+	height: 31px;
+	margin-left: 5px;
+	border: none;
+}
+
+#user-select-container ul li a p:first-child {
+	float: left;
+	width: 50%;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#user-select-container ul li a p:last-child {
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 11px;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/**********************************************************
+enterprise / users
+**********************************************************/
+
+#user-select-container {
+}
+
+#user-select-container ul {
+	margin: 0;
+	padding: 0;
+}
+
+#user-select-container ul li {
+	margin-bottom: 10px;
+	list-style: none;
+	text-align: left;
+}
+
+#user-select-container ul li a {
+	display: block;
+}
+
+/**********************************************************
+messages
+**********************************************************/
+
+#message-container {
+	text-align: left;
+}
+
+#message-container p {
+	margin-bottom: 15px;
+}
+
+#message-container p:last-child {
+	margin-bottom: 0;
+}
+
+#message-container #subject {
+	background: #4b4b4b;
+}
+
+/**********************************************************
+settings
+**********************************************************/
+
+#settings-form {
+	text-align: left;
+}
+
+#settings-form .section-header {
+	background: #4b4b4b;
+}
+
+#settings-form .input-button {
+	height: 40px;
+	padding: 0 20px;
+	border: none;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+#settings-form #color-settings {
+	padding: 0 0 40px;
+}
+
+#color-settings input {
+	display: none;
+}
+
+#color-settings input:checked+label {
+	transition: .5s;
+	border: 4px solid #c2c2c2;
+}
+
+#color-settings label {
+	transition: .5s;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 0px solid #c2c2c2;
+}

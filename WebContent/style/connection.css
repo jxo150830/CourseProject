@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	background: #f5f7f8;
+	font: 20px 'Open Sans';
+	color: #4b4b4b;
+	text-align: center;
+	line-height: 100vh;
+}
+
+p {
+	margin: 0;
+}
